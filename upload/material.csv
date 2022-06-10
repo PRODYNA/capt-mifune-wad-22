@@ -1,0 +1,25 @@
+﻿material_id,material_name,base_amount,base_unit,supplier_id,supplier_name
+24,Plastic foil,10000.0,cm2,,
+23,Aluminium foil,10000.0,cm2,,
+22,Duroplast,1000.0,g,,
+21,Paper,10000.0,cm2,,
+20,Color White,1000.0,ml,2,Paul Painty
+19,Color Red,1000.0,ml,2,Paul Painty
+18,Color Blue,1000.0,ml,2,Paul Painty
+17,City Plan Smurf Village,100.0,st,,
+16,Plastic Egg,100.0,st,,
+15,Papa Smurf Figure,100.0,st,,
+14,Papa Smurf Toy,100.0,st,,
+13,Cocoa butter,1000.0,g,,
+12,Wheat,1000.0,g,3,Clark Kent Farming
+11,Rice,1000.0,g,3,Clark Kent Farming
+10,Milk powder,1000.0,g,,
+9,Sugar,1000.0,g,,
+8,Milky white,1000.0,g,1,Charlie Chocolate
+7,Milk chocolate,1000.0,g,1,Charlie Chocolate
+6,Kinder Surprise Choclate Egg,100.0,st,,
+5,Kinder Surprise Papa Smurf,100.0,st,,
+4,Kinder Chocolate bar,100.0,st,,
+3,Kinder Chocolate,100.0,st,,
+2,Kinder Chocolate bar Cereals,100.0,st,,
+1,Kinder Chocolate Cereals,100.0,st,,
