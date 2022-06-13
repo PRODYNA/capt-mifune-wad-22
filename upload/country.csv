@@ -1,40 +1,9 @@
 id,name,isoCode
-4,Andorra,AD
-12,Australia,AU
-13,Austria,AT
-20,Belgium,BE
-30,Brazil,BR
-38,Canada,CA
-43,Chile,CL
-44,China,CN
 45,Christmas Island,CX
-46,Cocos (Keeling) Islands,CC
-52,Costa Rica,CR
-58,Czech Republic,CZ
 59,Denmark,DK
-62,Dominican Republic,DO
-74,France,FR
-81,Germany,DE
-84,Greece,GR
-108,Italy,IT
-109,Jamaica,JM
-110,Japan,JP
-171,Paraguay,PY
 172,Peru,PE
-173,Philippines,PH
-195,Serbia,RS
-196,Seychelles,SC
-198,Singapore,SG
-204,South Africa,ZA
-207,Spain,ES
-208,Sri Lanka,LK
-213,Sweden,SE
 214,Switzerland,CH
 219,Thailand,TH
-223,Tonga,TO
-230,Uganda,UG
-231,Ukraine,UA
-233,United Kingdom,GB
-234,United States,US
 240,Viet Nam,VN
 243,Wallis and Futuna,WF
+

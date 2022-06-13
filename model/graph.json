@@ -5,13 +5,16 @@
     "rootNodeId" : "50d3e102-e71b-4fea-bc12-f9e62e1958bf",
     "file" : "material.csv",
     "columnMapping" : {
+      "material.producedBy.supplier.name" : "supplier_name",
       "material.baseUnit" : "base_unit",
+      "material.producedBy.supplier.id" : "supplier_id",
       "material.baseAmount" : "base_amount",
-      "material.id" : "﻿id",
-      "material.name" : "name"
+      "material.id" : "﻿material_id",
+      "material.producedBy.supplier.from.country.iso" : "country_iso",
+      "material.name" : "material_name"
     },
     "modelValid" : true,
-    "mappingValid" : false
+    "mappingValid" : true
   }, {
     "id" : "d0ab41cd-4d15-4397-9950-e82f3fd76e21",
     "name" : "BOM",
@@ -43,6 +46,17 @@
     "columnMapping" : {
       "material.id" : "﻿material_id",
       "material.tag.tag.name" : "tag"
+    },
+    "modelValid" : true,
+    "mappingValid" : true
+  }, {
+    "id" : "6d3878d6-c8dc-4f5b-ac83-ce68467d04f9",
+    "name" : "Country",
+    "rootNodeId" : "ea0582fb-b408-417b-baf0-50e5f66b7210",
+    "file" : "country.csv",
+    "columnMapping" : {
+      "country.iso" : "isoCode",
+      "country.name" : "name"
     },
     "modelValid" : true,
     "mappingValid" : true
@@ -93,6 +107,20 @@
       "type" : "string",
       "primary" : false
     } ]
+  }, {
+    "id" : "ea0582fb-b408-417b-baf0-50e5f66b7210",
+    "label" : "Country",
+    "domainIds" : [ "7da1e414-02bf-45c5-821d-3f4b76a8a755", "6d3878d6-c8dc-4f5b-ac83-ce68467d04f9" ],
+    "color" : "#fabc2a",
+    "properties" : [ {
+      "name" : "iso",
+      "type" : "string",
+      "primary" : false
+    }, {
+      "name" : "name",
+      "type" : "string",
+      "primary" : false
+    } ]
   } ],
   "relations" : [ {
     "id" : "c82a62bd-e84e-4529-967b-d91fbef22b02",
@@ -137,6 +165,16 @@
     "primary" : false,
     "multiple" : false,
     "color" : "#1958bf",
+    "properties" : [ ]
+  }, {
+    "id" : "eb540272-2251-4910-84d5-3959e7f987a0",
+    "sourceId" : "fcf83f1b-80a5-4026-b5f2-87c7116e1539",
+    "targetId" : "ea0582fb-b408-417b-baf0-50e5f66b7210",
+    "domainIds" : [ "7da1e414-02bf-45c5-821d-3f4b76a8a755" ],
+    "type" : "FROM",
+    "primary" : false,
+    "multiple" : false,
+    "color" : "#6e1539",
     "properties" : [ ]
   } ]
 }

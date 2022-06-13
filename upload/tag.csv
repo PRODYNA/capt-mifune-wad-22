@@ -1,8 +1,8 @@
 ﻿tag,parent_tag
-Endproduct,null
-Food,null
+Endproduct,
+Food,
 Sweety,Food
 Soluble,Food
-Chemical,null
+Chemical,
 Color,Chemical
 Plastic,Chemical
