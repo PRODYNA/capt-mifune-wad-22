@@ -1,0 +1,142 @@
+{
+  "domains" : [ {
+    "id" : "7da1e414-02bf-45c5-821d-3f4b76a8a755",
+    "name" : "Material",
+    "rootNodeId" : "50d3e102-e71b-4fea-bc12-f9e62e1958bf",
+    "file" : "material.csv",
+    "columnMapping" : {
+      "material.baseUnit" : "base_unit",
+      "material.baseAmount" : "base_amount",
+      "material.id" : "﻿id",
+      "material.name" : "name"
+    },
+    "modelValid" : true,
+    "mappingValid" : false
+  }, {
+    "id" : "d0ab41cd-4d15-4397-9950-e82f3fd76e21",
+    "name" : "BOM",
+    "rootNodeId" : "50d3e102-e71b-4fea-bc12-f9e62e1958bf",
+    "file" : "bom.csv",
+    "columnMapping" : {
+      "material.contains[].material.id" : "component_id",
+      "material.contains[].value" : "value",
+      "material.id" : "﻿parent_id"
+    },
+    "modelValid" : true,
+    "mappingValid" : true
+  }, {
+    "id" : "09918d89-d07b-4b9f-b8d5-935e6201e244",
+    "name" : "Tag",
+    "rootNodeId" : "03900a7f-7d0a-49ed-88f2-f5442f9f0489",
+    "file" : "tag.csv",
+    "columnMapping" : {
+      "tag.name" : "﻿tag",
+      "tag.childOf.tag.name" : "parent_tag"
+    },
+    "modelValid" : true,
+    "mappingValid" : true
+  }, {
+    "id" : "a04f13f5-222b-4ce1-b7e0-5729141cf64e",
+    "name" : "TagMapping",
+    "rootNodeId" : "50d3e102-e71b-4fea-bc12-f9e62e1958bf",
+    "file" : "tag-mapping.csv",
+    "columnMapping" : {
+      "material.id" : "﻿material_id",
+      "material.tag.tag.name" : "tag"
+    },
+    "modelValid" : true,
+    "mappingValid" : true
+  } ],
+  "nodes" : [ {
+    "id" : "50d3e102-e71b-4fea-bc12-f9e62e1958bf",
+    "label" : "Material",
+    "domainIds" : [ "7da1e414-02bf-45c5-821d-3f4b76a8a755", "a04f13f5-222b-4ce1-b7e0-5729141cf64e", "d0ab41cd-4d15-4397-9950-e82f3fd76e21" ],
+    "color" : "#1958bf",
+    "properties" : [ {
+      "name" : "id",
+      "type" : "int",
+      "primary" : true
+    }, {
+      "name" : "name",
+      "type" : "string",
+      "primary" : false
+    }, {
+      "name" : "baseAmount",
+      "type" : "double",
+      "primary" : false
+    }, {
+      "name" : "baseUnit",
+      "type" : "string",
+      "primary" : false
+    } ]
+  }, {
+    "id" : "03900a7f-7d0a-49ed-88f2-f5442f9f0489",
+    "label" : "Tag",
+    "domainIds" : [ "09918d89-d07b-4b9f-b8d5-935e6201e244", "a04f13f5-222b-4ce1-b7e0-5729141cf64e" ],
+    "color" : "#9f0489",
+    "properties" : [ {
+      "name" : "name",
+      "type" : "string",
+      "primary" : true
+    } ]
+  }, {
+    "id" : "fcf83f1b-80a5-4026-b5f2-87c7116e1539",
+    "label" : "Supplier",
+    "domainIds" : [ "7da1e414-02bf-45c5-821d-3f4b76a8a755" ],
+    "color" : "#6e1539",
+    "properties" : [ {
+      "name" : "id",
+      "type" : "int",
+      "primary" : true
+    }, {
+      "name" : "name",
+      "type" : "string",
+      "primary" : false
+    } ]
+  } ],
+  "relations" : [ {
+    "id" : "c82a62bd-e84e-4529-967b-d91fbef22b02",
+    "sourceId" : "50d3e102-e71b-4fea-bc12-f9e62e1958bf",
+    "targetId" : "50d3e102-e71b-4fea-bc12-f9e62e1958bf",
+    "domainIds" : [ "d0ab41cd-4d15-4397-9950-e82f3fd76e21" ],
+    "type" : "CONTAINS",
+    "primary" : false,
+    "multiple" : true,
+    "color" : "#1958bf",
+    "properties" : [ {
+      "name" : "value",
+      "type" : "double",
+      "primary" : false
+    } ]
+  }, {
+    "id" : "947dc209-9afb-41cd-abeb-90628791a2e9",
+    "sourceId" : "03900a7f-7d0a-49ed-88f2-f5442f9f0489",
+    "targetId" : "03900a7f-7d0a-49ed-88f2-f5442f9f0489",
+    "domainIds" : [ "09918d89-d07b-4b9f-b8d5-935e6201e244" ],
+    "type" : "CHILD_OF",
+    "primary" : false,
+    "multiple" : false,
+    "color" : "#9f0489",
+    "properties" : [ ]
+  }, {
+    "id" : "90214284-8048-4a67-a9e1-d5a52a7e3d01",
+    "sourceId" : "50d3e102-e71b-4fea-bc12-f9e62e1958bf",
+    "targetId" : "03900a7f-7d0a-49ed-88f2-f5442f9f0489",
+    "domainIds" : [ "a04f13f5-222b-4ce1-b7e0-5729141cf64e" ],
+    "type" : "TAG",
+    "primary" : false,
+    "multiple" : false,
+    "color" : "#1958bf",
+    "properties" : [ ]
+  }, {
+    "id" : "cec9d2e8-ac12-4b4b-b888-ce319652369b",
+    "sourceId" : "50d3e102-e71b-4fea-bc12-f9e62e1958bf",
+    "targetId" : "fcf83f1b-80a5-4026-b5f2-87c7116e1539",
+    "domainIds" : [ "7da1e414-02bf-45c5-821d-3f4b76a8a755" ],
+    "type" : "PRODUCED_BY",
+    "primary" : false,
+    "multiple" : false,
+    "color" : "#1958bf",
+    "properties" : [ ]
+  } ]
+}
