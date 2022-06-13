@@ -1,4 +1,4 @@
-﻿material_id,material_name,base_amount,base_unit,supplier_id,supplier_name,country_iso
+material_id,material_name,base_amount,base_unit,supplier_id,supplier_name,country_iso
 27,Vanillin,1025.0,g,4,World of Sweets GmbH,CX
 26,Puffed grain,2000.0,g,4,World of Sweets GmbH,CX
 26,Butter fat,3918.0,g,5,Chr. Storz GmbH & Co. KG,CH

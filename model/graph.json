@@ -9,7 +9,7 @@
       "material.baseUnit" : "base_unit",
       "material.producedBy.supplier.id" : "supplier_id",
       "material.baseAmount" : "base_amount",
-      "material.id" : "﻿material_id",
+      "material.id" : "material_id",
       "material.producedBy.supplier.from.country.iso" : "country_iso",
       "material.name" : "material_name"
     },
@@ -23,7 +23,7 @@
     "columnMapping" : {
       "material.contains[].material.id" : "component_id",
       "material.contains[].value" : "value",
-      "material.id" : "﻿parent_id"
+      "material.id" : "parent_id"
     },
     "modelValid" : true,
     "mappingValid" : true
@@ -33,7 +33,7 @@
     "rootNodeId" : "03900a7f-7d0a-49ed-88f2-f5442f9f0489",
     "file" : "tag.csv",
     "columnMapping" : {
-      "tag.name" : "﻿tag",
+      "tag.name" : "tag",
       "tag.childOf.tag.name" : "parent_tag"
     },
     "modelValid" : true,
@@ -44,7 +44,7 @@
     "rootNodeId" : "50d3e102-e71b-4fea-bc12-f9e62e1958bf",
     "file" : "tag-mapping.csv",
     "columnMapping" : {
-      "material.id" : "﻿material_id",
+      "material.id" : "material_id",
       "material.tag.tag.name" : "tag"
     },
     "modelValid" : true,
@@ -115,7 +115,7 @@
     "properties" : [ {
       "name" : "iso",
       "type" : "string",
-      "primary" : false
+      "primary" : true
     }, {
       "name" : "name",
       "type" : "string",
