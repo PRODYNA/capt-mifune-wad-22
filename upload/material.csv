@@ -1,23 +1,28 @@
 ﻿material_id,material_name,base_amount,base_unit,supplier_id,supplier_name
-24,Plastic foil,10000.0,cm2,,
-23,Aluminium foil,10000.0,cm2,,
-22,Duroplast,1000.0,g,,
-21,Paper,10000.0,cm2,,
+27,Vanillin,1025.0,g,4,World of Sweets GmbH
+26,Puffed grain,2000.0,g,4,World of Sweets GmbH
+26,Butter fat,3918.0,g,5,Chr. Storz GmbH & Co. KG
+26,Vegatable fat,1250.0,g,5,Chr. Storz GmbH & Co. KG
+25,Soy lecithin,4525.0,g,6,Lekkerland SE
+24,Plastic foil,10000.0,cm2,7,WAWI-Euro GmbH
+23,Aluminium foil,10000.0,cm2,7,WAWI-Euro GmbH
+22,Duroplast,1000.0,g,5,Chr. Storz GmbH & Co. KG
+21,Paper,10000.0,cm2,8,Cater Point
 20,Color White,1000.0,ml,2,Paul Painty
 19,Color Red,1000.0,ml,2,Paul Painty
 18,Color Blue,1000.0,ml,2,Paul Painty
 17,City Plan Smurf Village,100.0,st,,
-16,Plastic Egg,100.0,st,,
+16,Plastic Egg,100.0,st,7,WAWI-Euro GmbH
 15,Papa Smurf Figure,100.0,st,,
 14,Papa Smurf Toy,100.0,st,,
-13,Cocoa butter,1000.0,g,,
+13,Cocoa butter,1000.0,g,4,World of Sweets GmbH
 12,Wheat,1000.0,g,3,Clark Kent Farming
 11,Rice,1000.0,g,3,Clark Kent Farming
-10,Milk powder,1000.0,g,,
-9,Sugar,1000.0,g,,
+10,Milk powder,1000.0,g,6,Lekkerland SE
+9,Sugar,1000.0,g,6,Lekkerland SE
 8,Milky white,1000.0,g,1,Charlie Chocolate
 7,Milk chocolate,1000.0,g,1,Charlie Chocolate
-6,Kinder Surprise Choclate Egg,100.0,st,,
+6,Kinder Surprise Chocolate Egg,100.0,st,,
 5,Kinder Surprise Papa Smurf,100.0,st,,
 4,Kinder Chocolate bar,100.0,st,,
 3,Kinder Chocolate,100.0,st,,
